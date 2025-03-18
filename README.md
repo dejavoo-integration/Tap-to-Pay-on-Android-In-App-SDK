@@ -1,1 +1,1 @@
-# inappsdk
+# Tap to Pay on Android In-App SDK
