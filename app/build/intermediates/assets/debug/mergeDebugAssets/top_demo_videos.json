@@ -1,0 +1,54 @@
+{
+  "Demo_videos": [
+    {
+      "title": "Sale Transaction",
+      "url": "https://media.publit.io/file/TapOnPhone/How-to-Perform-a-Simple-Tap-to-Pay-Transaction.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/How-to-Perform-a-Simple-Tap-to-Pay-Transaction.jpg"
+    },
+    {
+      "title": "Sale with Tip",
+      "url": "https://media.publit.io/file/TapOnPhone/How-to-Add-Tip-to-a-Transaction.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/How-to-Add-Tip-to-a-Transaction.jpg"
+    },
+    {
+      "title": "Sale with Fee",
+      "url": "https://media.publit.io/file/h_1080/TapOnPhone/TapOnPhoneSaleWithFeeTransaction.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/TapOnPhoneSaleWithFeeTransaction.jpg"
+    },
+    {
+      "title": "Void Transaction",
+      "url": "https://media.publit.io/file/TapOnPhone/How-to-Void-a-Transaction.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/How-to-Void-a-Transaction.jpg"
+    },
+    {
+      "title": "Refund Transaction",
+      "url": "https://media.publit.io/file/TapOnPhone/How-to-Process-Refunds-for-Transactions.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/How-to-Process-Refunds-for-Transactions.jpg"
+    },
+    {
+      "title": "Ticket Transaction",
+      "url": "https://media.publit.io/file/h_1080/TapOnPhone/TapOnPhoneTicketTransaction.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/TapOnPhoneTicketTransaction.jpg"
+    },
+    {
+      "title": "Tip Adjust",
+      "url": "https://media.publit.io/file/h_1080/TapOnPhone/TapOnPhoneTipAdjust.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/TapOnPhoneTipAdjust.jpg"
+    },
+    {
+      "title": "Batch Settlement",
+      "url": "https://media.publit.io/file/TapOnPhone/How-to-Settle-a-Batch.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/How-to-Settle-a-Batch.jpg"
+    },
+    {
+      "title": "QR Transaction",
+      "url": "https://media.publit.io/file/TapOnPhone/How-to-Perform-a-QR-Pay-Transaction.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/How-to-Perform-a-QR-Pay-Transaction.jpg"
+    },
+    {
+      "title": "How to Spot the NFC Zone",
+      "url": "https://media.publit.io/file/TapOnPhone/How-to-Spot-the-NFC-Zone-on-Your-Android-Phone.mp4",
+      "thumbnail": "https://media.publit.io/file/TapOnPhone/How-to-Spot-the-NFC-Zone-on-Your-Android-Phone.jpg"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.denovo.app.invokeiposgosample'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.denovo.app.invokeiposgosample"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+       // testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        debug {
+           /* signingConfig signingConfigs.release*/
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            /*signingConfig signingConfigs.release*/
+            minifyEnabled false
+            shrinkResources false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    configurations {
+        all {
+            exclude group: 'org.json', module: 'json'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+
+
+
+
+
+    //MAVEN TEST
+    //without send payment link and upgraded to 34
+   //implementation 'com.denovo:topliteapp:6.0.0.160'
+
+//    sendpayment link
+     implementation 'com.denovo:topliteapp:6.0.0.153'
+
+    //UAT
+//    implementation 'com.denovo:topliteapp:1.7.5.3'
+//    implementation files('../libs/SoftPos-v1.3.66.7-Debug_Test.aar')
+
+    //prod
+//    implementation 'com.denovo:topliteapp-PROD:7.0.0.5'
+//    implementation files('../libs/SoftPos-v1.3.66.14-Release_Prod.aar')
+
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

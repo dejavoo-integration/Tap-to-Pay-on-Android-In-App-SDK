@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.denovo.app.invokeiposgosample.app-mergeDebugResources-41:/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jeevan\\.gradle\\caches\\transforms-3\\97cd153ddbcb1a504712052dd48d5562\\transformed\\jetified-core-1.9.8\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                }
+            ]
+        }
+    ]
+}

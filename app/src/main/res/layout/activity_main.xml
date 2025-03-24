@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ma_dvPayLiteRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="TPN:" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ma_iPosGoRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Merchant Code:" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--US-UAT-TPN-128922769414-->
+                    <!--US-UAT-TPN-128922179779-->
+                    <!--US-DEV-TPN-999522871908-->
+                    <!--EU-UAT-TPN-739723554003-->
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ma_tpnEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="false"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:text="128922179779"
+                        android:textSize="22dp" />
+
+                    <!--US-UAT-MC-139453877702-->
+                    <!--US-UAT-MC-654289316975-->
+                    <!--US-DEV-MC-996225251718-->
+                    <!--EU-UAT-MC-311615372134-->
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ma_merchantKeyEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cursorVisible="false"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:text="654289316975"
+                        android:textSize="22dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ma_registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="Register"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:verticalScrollbarPosition="right">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="-------------RESPONSE-------------"
+                        android:textSize="16dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ma_registerResultTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="?attr/actionBarSize"
+                app:tabMode="scrollable">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SALE" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VOID" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REFUND" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRE-AUTH" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TICKET" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BATCH" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TIP_ADJUST" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADMINISTRATIVE" />
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECENT_TXN" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/ma_amountLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Amount"
+                        android:textSize="20dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ma_amountEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:cursorVisible="false"
+                        android:digits="0123456789"
+                        android:drawableStart="@drawable/dollar"
+                        android:inputType="number"
+                        android:text="5.00"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/ma_getFullCardNumberCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Full Card Number"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/ma_receiptCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Receipt data in response"
+                        android:textSize="12dp" />
+
+                    <CheckBox
+                        android:id="@+id/ma_approvalScreenCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show Approval screen"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ma_transactionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="PERFORM TRANSACTION"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:verticalScrollbarPosition="right">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="-------------RESPONSE-------------"
+                        android:textSize="16dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ma_transactionResultTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

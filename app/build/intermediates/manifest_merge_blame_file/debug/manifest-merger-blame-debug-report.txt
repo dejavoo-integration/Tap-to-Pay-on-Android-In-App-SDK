@@ -1,0 +1,1057 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.denovo.app.invokeiposgosample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:5:22-77
+12    <uses-permission
+12-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:6:5-80
+13        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+13-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:6:22-78
+14        android:maxSdkVersion="28" />
+14-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:53:9-35
+15    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+15-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:7:5-81
+15-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:7:22-79
+16    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+16-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:8:5-75
+16-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:8:22-73
+17    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+17-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:9:5-74
+17-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:9:22-72
+18    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+18-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:10:5-74
+18-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:10:22-72
+19
+20    <!--
+21    <uses-feature
+22        android:name="android.hardware.location.gps"
+23        android:required="false" />
+24
+25    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+26    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+27    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+28    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+29    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+30
+31    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+32    <uses-permission android:name="android.permission.REBOOT" />
+33    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+34    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+35    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+36    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+37    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+38    -->
+39    <!-- TODO DISABLE THIS PERMISSION WHEN BUILD THE PLAY STORE FLAVOUR APP -->
+40    <!-- <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> -->
+41    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+41-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:34:5-36:47
+41-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:35:9-57
+42    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.ACTION_INSTALL_PACKAGE" /> -->
+42-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:37:5-67
+42-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:37:22-64
+43    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+43-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:39:5-81
+43-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:39:22-78
+44    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+44-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:40:5-79
+44-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:40:22-76
+45    <uses-permission android:name="android.net.conn.CONNECTIVITY_CHANGE" /> <!-- <uses-permission android:name="android.Manifest.permission.WRITE_APN_SETTINGS" /> -->
+45-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:41:5-76
+45-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:41:22-73
+46    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+46-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:43:5-79
+46-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:43:22-76
+47    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+47-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:44:5-79
+47-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:44:22-76
+48    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+48-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:45:5-76
+48-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:45:22-73
+49    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+49-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:46:5-76
+49-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:46:22-73
+50    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+50-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:47:5-75
+50-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:47:22-72
+51    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" /> <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+51-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:48:5-84
+51-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:48:22-81
+52    <uses-permission android:name="android.permission.WAKE_LOCK" />
+52-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:50:5-68
+52-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:50:22-65
+53    <!--
+54        <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+55        tools:ignore="ScopedStorage" />
+56    -->
+57    <uses-permission android:name="android.permission.VIBRATE" />
+57-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:59:5-66
+57-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:59:22-63
+58    <uses-permission android:name="android.permission.NFC" />
+58-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:60:5-62
+58-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:60:22-59
+59
+60    <uses-feature
+60-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:62:5-64:35
+61        android:name="android.hardware.nfc"
+61-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:63:9-44
+62        android:required="true" /> <!-- Include required permissions for Advertising Id -->
+62-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:64:9-32
+63    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+63-->[com.google.android.gms:play-services-ads-identifier:18.0.1] C:\Users\Jeevan\.gradle\caches\transforms-3\5476e9bcc5215b719511387f343a9773\transformed\jetified-play-services-ads-identifier-18.0.1\AndroidManifest.xml:23:5-79
+63-->[com.google.android.gms:play-services-ads-identifier:18.0.1] C:\Users\Jeevan\.gradle\caches\transforms-3\5476e9bcc5215b719511387f343a9773\transformed\jetified-play-services-ads-identifier-18.0.1\AndroidManifest.xml:23:22-76
+64    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+64-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:27:5-81
+64-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:27:22-78
+65    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+65-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
+65-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:22-74
+66
+67    <application
+67-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:13:5-34:19
+68        android:name="com.denovo.app.invokeiposgosample.utility.ThemeApplication"
+68-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:14:9-49
+69        android:allowBackup="true"
+69-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:15:9-35
+70        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+70-->[androidx.core:core:1.8.0] C:\Users\Jeevan\.gradle\caches\transforms-3\07641fd7587ae5ee4e47c4b3e36a7852\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+71        android:configChanges="locale|orientation"
+71-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:70:9-51
+72        android:dataExtractionRules="@xml/data_extraction_rules"
+72-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:16:9-65
+73        android:debuggable="true"
+74        android:extractNativeLibs="false"
+75        android:fullBackupContent="@xml/backup_rules"
+75-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:17:9-54
+76        android:hardwareAccelerated="true"
+76-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:71:9-43
+77        android:icon="@mipmap/ic_launcher"
+77-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:18:9-43
+78        android:label="@string/app_name"
+78-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:19:9-41
+79        android:largeHeap="true"
+79-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:73:9-33
+80        android:requestLegacyExternalStorage="true"
+80-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:74:9-52
+81        android:roundIcon="@mipmap/ic_launcher_round"
+81-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:20:9-54
+82        android:supportsRtl="true"
+82-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:21:9-35
+83        android:theme="@style/Theme.InvokeIposGoSample"
+83-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:22:9-56
+84        android:windowSoftInputMode="stateHidden|adjustPan" >
+84-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:78:9-60
+85        <activity
+85-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:26:9-33:20
+86            android:name="com.denovo.app.invokeiposgosample.MainActivity"
+86-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:27:13-41
+87            android:exported="true" >
+87-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:28:13-36
+88            <intent-filter>
+88-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:29:13-32:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:30:17-69
+89-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:30:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:31:17-77
+91-->D:\Tap-to-Pay-on-Android-In-App-SDK\app\src\main\AndroidManifest.xml:31:27-74
+92            </intent-filter>
+93        </activity>
+94        <activity
+94-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:79:9-82:63
+95            android:name="com.denovo.app.top.uilayer.pre_sale_ticket.UIPreSaleTransactionList"
+95-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:80:13-95
+96            android:exported="false"
+96-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:81:13-37
+97            android:windowSoftInputMode="stateAlwaysHidden" />
+97-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:82:13-60
+98        <activity
+98-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:83:9-86:63
+99            android:name="com.denovo.app.top.uilayer.pre_sale_ticket.UITxnStatusActivity"
+99-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:84:13-90
+100            android:exported="false"
+100-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:85:13-37
+101            android:windowSoftInputMode="stateAlwaysHidden" />
+101-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:86:13-60
+102        <activity
+102-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:87:9-91:63
+103            android:name="com.denovo.app.top.uilayer.pre_sale_ticket.UIPreSaleTicketScreen"
+103-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:88:13-92
+104            android:exported="false"
+104-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:89:13-37
+105            android:screenOrientation="portrait"
+105-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:90:13-49
+106            android:windowSoftInputMode="stateAlwaysHidden" />
+106-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:91:13-60
+107        <activity
+107-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:92:9-94:52
+108            android:name="com.denovo.app.top.uilayer.send_link.SendLinkActivity"
+108-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:93:13-81
+109            android:screenOrientation="portrait" />
+109-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:94:13-49
+110        <activity
+110-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:95:9-97:52
+111            android:name="com.denovo.app.top.uilayer.send_link.UISendPaymentLinkList"
+111-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:96:13-86
+112            android:screenOrientation="portrait" />
+112-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:97:13-49
+113        <activity
+113-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:98:9-100:58
+114            android:name="com.denovo.app.top.uilayer.settings.TxnActivity"
+114-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:99:13-75
+115            android:label="@string/title_activity_txn" />
+115-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:100:13-55
+116        <activity
+116-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:101:9-104:52
+117            android:name="com.denovo.app.top.uilayer.spin.user_choice.UIUserChoiceListActivity"
+117-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:102:13-96
+118            android:exported="true"
+118-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:103:13-36
+119            android:screenOrientation="portrait" />
+119-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:104:13-49
+120        <activity
+120-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:105:9-108:52
+121            android:name="com.denovo.app.top.uilayer.call_me_back.UICallMeBackScreen"
+121-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:106:13-86
+122            android:exported="true"
+122-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:107:13-36
+123            android:screenOrientation="portrait" />
+123-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:108:13-49
+124        <activity
+124-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:109:9-114:63
+125            android:name="com.denovo.app.top.uilayer.cardentry.UIDebitScreen"
+125-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:110:13-78
+126            android:exported="true"
+126-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:111:13-36
+127            android:launchMode="singleTop"
+127-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:112:13-43
+128            android:screenOrientation="portrait"
+128-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:113:13-49
+129            android:windowSoftInputMode="stateAlwaysHidden" />
+129-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:114:13-60
+130        <activity
+130-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:115:9-118:52
+131            android:name="com.denovo.app.top.uilayer.sense_pass.UIVoidWalletScreen"
+131-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:116:13-84
+132            android:exported="true"
+132-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:117:13-36
+133            android:screenOrientation="portrait" />
+133-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:118:13-49
+134        <activity
+134-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:119:9-122:52
+135            android:name="com.denovo.app.top.uilayer.splash.UISplashScreen"
+135-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:120:13-76
+136            android:exported="true"
+136-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:121:13-36
+137            android:screenOrientation="portrait" />
+137-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:122:13-49
+138        <!--
+139        <activity
+140            android:exported="true"
+141            android:name="com.denovo.app.top.uilayer.splash.UISplashScreen"
+142            android:screenOrientation="portrait">
+143            <intent-filter android:autoVerify="true">
+144                <action android:name="android.intent.action.MAIN" />
+145
+146                <category android:name="android.intent.category.LAUNCHER" />
+147            </intent-filter>
+148        </activity>
+149        -->
+150        <activity
+150-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:135:9-137:52
+151            android:name="com.denovo.app.top.uilayer.UIAmountEntryScreen"
+151-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:136:13-74
+152            android:screenOrientation="portrait" />
+152-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:137:13-49
+153        <activity
+153-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:138:9-140:52
+154            android:name="com.denovo.app.top.uilayer.spin.UIUserInputActivity"
+154-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:139:13-79
+155            android:screenOrientation="portrait" />
+155-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:140:13-49
+156        <activity
+156-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:141:9-143:52
+157            android:name="com.denovo.app.top.uilayer.cardpresent.UICardPresentScreen"
+157-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:142:13-86
+158            android:screenOrientation="portrait" />
+158-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:143:13-49
+159        <!--
+160             <activity
+161             android:name="com.denovo.app.top.uilayer.UICardEntryScreen"
+162             android:launchMode="singleTop"
+163             android:screenOrientation="portrait" />
+164        -->
+165        <activity
+165-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:150:9-153:56
+166            android:name="com.denovo.app.top.uilayer.settings.MenuPasswordActivity"
+166-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:151:13-84
+167            android:screenOrientation="portrait"
+167-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:152:13-49
+168            android:theme="@style/TransparentCompat" />
+168-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:153:13-53
+169        <activity
+169-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:154:9-157:56
+170            android:name="com.denovo.app.top.uilayer.dialogs.PasswordActivity"
+170-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:155:13-79
+171            android:screenOrientation="portrait"
+171-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:156:13-49
+172            android:theme="@style/TransparentCompat" />
+172-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:157:13-53
+173        <activity
+173-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:158:9-160:52
+174            android:name="com.denovo.app.top.uilayer.result.ApprovedActivity"
+174-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:159:13-78
+175            android:screenOrientation="portrait" />
+175-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:160:13-49
+176        <activity
+176-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:161:9-165:52
+177            android:name="com.denovo.app.top.uilayer.UISignatureScreen"
+177-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:162:13-72
+178            android:hardwareAccelerated="false"
+178-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:163:13-48
+179            android:launchMode="singleTop"
+179-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:164:13-43
+180            android:screenOrientation="portrait" />
+180-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:165:13-49
+181        <activity
+181-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:166:9-169:52
+182            android:name="com.denovo.app.top.uilayer.UICustomerCopyScreen"
+182-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:167:13-75
+183            android:launchMode="singleTop"
+183-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:168:13-43
+184            android:screenOrientation="portrait" />
+184-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:169:13-49
+185        <activity
+185-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:170:9-173:52
+186            android:name="com.denovo.app.top.uilayer.dialogs.TrackValidationActivity"
+186-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:171:13-86
+187            android:launchMode="singleTop"
+187-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:172:13-43
+188            android:screenOrientation="portrait" />
+188-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:173:13-49
+189        <!--
+190<activity
+191            android:name="com.denovo.app.top.uilayer.comm.UIWifiDetailsScreen"
+192            android:screenOrientation="portrait" />
+193        <activity
+194            android:name="com.denovo.app.top.uilayer.comm.UIGPRSDetailsScreen"
+195            android:screenOrientation="portrait" />
+196        -->
+197        <activity
+197-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:182:9-184:52
+198            android:name="com.denovo.app.top.uilayer.settings.UISettingsScreen"
+198-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:183:13-80
+199            android:screenOrientation="portrait" />
+199-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:184:13-49
+200        <activity
+200-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:185:9-187:52
+201            android:name="com.denovo.app.top.device.tap_on_phone.epay.hppPage.views.HppWebViewActivity"
+201-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:186:13-104
+202            android:screenOrientation="portrait" />
+202-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:187:13-49
+203        <activity
+203-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:188:9-190:52
+204            android:name="com.denovo.app.top.uilayer.settings.lanuage.LanguageActivity"
+204-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:189:13-88
+205            android:screenOrientation="portrait" />
+205-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:190:13-49
+206        <activity
+206-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:191:9-193:52
+207            android:name="com.denovo.app.top.uilayer.network.UINetworkActivity"
+207-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:192:13-80
+208            android:screenOrientation="portrait" />
+208-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:193:13-49
+209        <activity
+209-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:194:9-197:57
+210            android:name="com.denovo.app.top.uilayer.network.StaticIpActivity"
+210-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:195:13-79
+211            android:screenOrientation="portrait"
+211-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:196:13-49
+212            android:windowSoftInputMode="stateHidden" />
+212-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:197:13-54
+213        <activity
+213-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:198:9-200:52
+214            android:name="com.denovo.app.top.uilayer.settings.UISupportScreen"
+214-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:199:13-79
+215            android:screenOrientation="portrait" />
+215-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:200:13-49
+216        <activity
+216-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:201:9-203:52
+217            android:name="com.denovo.app.top.uilayer.ui_noreceipt.UISMSReceiptActivity"
+217-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:202:13-88
+218            android:screenOrientation="portrait" />
+218-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:203:13-49
+219        <activity
+219-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:204:9-207:52
+220            android:name="com.denovo.app.top.uilayer.ui_noreceipt.UISuccessReceiptActivity"
+220-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:205:13-92
+221            android:launchMode="singleTop"
+221-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:206:13-43
+222            android:screenOrientation="portrait" />
+222-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:207:13-49
+223        <activity
+223-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:208:9-211:57
+224            android:name="com.denovo.app.top.uilayer.UIVoidScreen"
+224-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:209:13-67
+225            android:screenOrientation="portrait"
+225-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:210:13-49
+226            android:windowSoftInputMode="stateHidden" />
+226-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:211:13-54
+227        <activity
+227-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:212:9-215:57
+228            android:name="com.denovo.app.top.uilayer.UIReprintReceiptActivity"
+228-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:213:13-79
+229            android:screenOrientation="portrait"
+229-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:214:13-49
+230            android:windowSoftInputMode="stateHidden" />
+230-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:215:13-54
+231        <activity
+231-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:216:9-219:57
+232            android:name="com.denovo.app.top.uilayer.ui_noreceipt.UIEmailReceiptActivity"
+232-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:217:13-90
+233            android:screenOrientation="portrait"
+233-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:218:13-49
+234            android:windowSoftInputMode="stateHidden" />
+234-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:219:13-54
+235        <activity
+235-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:220:9-224:57
+236            android:name="com.denovo.app.top.uilayer.UIManualKeyEntry"
+236-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:221:13-71
+237            android:launchMode="singleTop"
+237-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:222:13-43
+238            android:screenOrientation="portrait"
+238-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:223:13-49
+239            android:windowSoftInputMode="stateHidden" />
+239-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:224:13-54
+240        <activity
+240-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:225:9-227:52
+241            android:name="com.denovo.app.top.uilayer.batchprofile.UIBatchDataActivity"
+241-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:226:13-87
+242            android:screenOrientation="portrait" />
+242-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:227:13-49
+243        <activity
+243-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:228:9-230:52
+244            android:name="com.denovo.app.top.uilayer.reports.UIReportActivity"
+244-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:229:13-79
+245            android:screenOrientation="portrait" />
+245-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:230:13-49
+246        <activity
+246-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:231:9-233:52
+247            android:name="com.denovo.app.top.uilayer.reports.UIBatchReportActivity"
+247-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:232:13-84
+248            android:screenOrientation="portrait" />
+248-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:233:13-49
+249        <activity
+249-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:234:9-236:52
+250            android:name="com.denovo.app.top.uilayer.BaseActivity"
+250-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:235:13-67
+251            android:screenOrientation="portrait" />
+251-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:236:13-49
+252        <activity
+252-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:237:9-241:57
+253            android:name="com.denovo.app.top.uilayer.tip.TipActivity"
+253-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:238:13-70
+254            android:launchMode="singleTop"
+254-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:239:13-43
+255            android:screenOrientation="portrait"
+255-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:240:13-49
+256            android:windowSoftInputMode="stateHidden" />
+256-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:241:13-54
+257        <activity
+257-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:242:9-246:57
+258            android:name="com.denovo.app.top.uilayer.breakup.BreakUpActivity"
+258-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:243:13-78
+259            android:launchMode="singleTop"
+259-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:244:13-43
+260            android:screenOrientation="portrait"
+260-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:245:13-49
+261            android:windowSoftInputMode="stateHidden" />
+261-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:246:13-54
+262        <activity
+262-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:247:9-249:52
+263            android:name="com.denovo.app.top.uilayer.demo_mode.DemoModeActivity"
+263-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:248:13-81
+264            android:screenOrientation="portrait" />
+264-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:249:13-49
+265        <activity
+265-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:250:9-252:52
+266            android:name="com.denovo.app.top.uilayer.demo_mode.AllTransactionsActivity"
+266-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:251:13-88
+267            android:screenOrientation="portrait" />
+267-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:252:13-49
+268        <activity
+268-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:253:9-256:52
+269            android:name="com.denovo.app.top.uilayer.tip.CustomTipActivity"
+269-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:254:13-76
+270            android:launchMode="singleTop"
+270-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:255:13-43
+271            android:screenOrientation="portrait" />
+271-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:256:13-49
+272        <activity
+272-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:257:9-259:52
+273            android:name="com.denovo.app.top.uilayer.UISettlementScreen"
+273-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:258:13-73
+274            android:screenOrientation="portrait" />
+274-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:259:13-49
+275        <activity
+275-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:260:9-263:52
+276            android:name="com.denovo.app.top.uilayer.result.UIDeclineScreen"
+276-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:261:13-77
+277            android:launchMode="singleTop"
+277-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:262:13-43
+278            android:screenOrientation="portrait" />
+278-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:263:13-49
+279        <activity
+279-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:264:9-266:52
+280            android:name="com.denovo.app.top.uilayer.tip_adjust.UITipAdjustScreen"
+280-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:265:13-83
+281            android:screenOrientation="portrait" />
+281-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:266:13-49
+282        <activity
+282-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:267:9-269:52
+283            android:name="com.denovo.app.top.uilayer.tip_adjust.UITipSummaryScreen"
+283-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:268:13-84
+284            android:screenOrientation="portrait" />
+284-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:269:13-49
+285        <activity
+285-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:270:9-272:52
+286            android:name="com.denovo.app.top.uilayer.cash.CashActivity"
+286-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:271:13-72
+287            android:screenOrientation="portrait" />
+287-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:272:13-49
+288        <activity
+288-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:273:9-276:52
+289            android:name="com.denovo.app.top.uilayer.debit.DebitPinActivity"
+289-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:274:13-77
+290            android:launchMode="singleTop"
+290-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:275:13-43
+291            android:screenOrientation="portrait" />
+291-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:276:13-49
+292        <activity
+292-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:277:9-279:52
+293            android:name="com.denovo.app.top.uilayer.settings.ResetPasswordActivity"
+293-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:278:13-85
+294            android:screenOrientation="portrait" />
+294-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:279:13-49
+295        <activity
+295-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:280:9-282:52
+296            android:name="com.denovo.app.top.uilayer.settings.SetPasswordActivity"
+296-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:281:13-83
+297            android:screenOrientation="portrait" />
+297-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:282:13-49
+298        <activity
+298-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:283:9-292:20
+299            android:name="com.denovo.app.top.uilayer.UIUpdateAppScreen"
+299-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:284:13-72
+300            android:exported="true"
+300-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:285:13-36
+301            android:screenOrientation="portrait" >
+301-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:286:13-49
+302            <intent-filter>
+302-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:287:13-291:29
+303                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+303-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:288:17-85
+303-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:288:25-82
+304
+305                <category android:name="android.intent.category.DEFAULT" />
+305-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:290:17-76
+305-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:290:27-73
+306            </intent-filter>
+307        </activity>
+308        <activity
+308-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:293:9-296:57
+309            android:name="com.denovo.app.top.uilayer.ticket.UITicketScreen"
+309-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:294:13-76
+310            android:screenOrientation="portrait"
+310-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:295:13-49
+311            android:windowSoftInputMode="stateHidden" />
+311-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:296:13-54
+312        <activity
+312-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:297:9-300:57
+313            android:name="com.denovo.app.top.uilayer.settings.HostSetUpActivity"
+313-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:298:13-81
+314            android:screenOrientation="portrait"
+314-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:299:13-49
+315            android:windowSoftInputMode="stateHidden" />
+315-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:300:13-54
+316        <activity
+316-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:301:9-303:52
+317            android:name="com.denovo.app.top.uilayer.demo_mode.DemoActivity"
+317-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:302:13-77
+318            android:screenOrientation="portrait" />
+318-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:303:13-49
+319        <activity
+319-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:304:9-308:63
+320            android:name="com.denovo.app.top.uilayer.UIEBTScreen"
+320-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:305:13-66
+321            android:launchMode="singleTop"
+321-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:306:13-43
+322            android:screenOrientation="portrait"
+322-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:307:13-49
+323            android:windowSoftInputMode="stateAlwaysHidden" />
+323-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:308:13-60
+324        <activity
+324-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:309:9-313:57
+325            android:name="com.denovo.app.top.uilayer.ebt.UIEBTBreakScreen"
+325-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:310:13-75
+326            android:launchMode="singleTop"
+326-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:311:13-43
+327            android:screenOrientation="portrait"
+327-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:312:13-49
+328            android:windowSoftInputMode="stateHidden" />
+328-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:313:13-54
+329        <activity
+329-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:314:9-317:52
+330            android:name="com.denovo.app.top.uilayer.splash.SuccessActivity"
+330-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:315:13-77
+331            android:launchMode="singleTop"
+331-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:316:13-43
+332            android:screenOrientation="portrait" />
+332-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:317:13-49
+333        <activity
+333-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:318:9-320:52
+334            android:name="com.denovo.app.top.uilayer.settings.UIAboutDeviceActivity"
+334-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:319:13-85
+335            android:screenOrientation="portrait" />
+335-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:320:13-49
+336        <activity
+336-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:321:9-323:52
+337            android:name="com.denovo.app.top.uilayer.keyboard.UIKeyboardSetting"
+337-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:322:13-81
+338            android:screenOrientation="portrait" />
+338-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:323:13-49
+339        <activity
+339-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:324:9-326:52
+340            android:name="com.denovo.app.top.uilayer.settings.TimeZoneActivity"
+340-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:325:13-80
+341            android:screenOrientation="portrait" />
+341-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:326:13-49
+342        <activity
+342-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:327:9-329:52
+343            android:name="com.denovo.app.top.uilayer.spin.SpinActivity"
+343-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:328:13-72
+344            android:screenOrientation="portrait" />
+344-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:329:13-49
+345        <activity
+345-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:330:9-333:52
+346            android:name="com.denovo.app.top.uilayer.survey.SurveyActivity"
+346-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:331:13-76
+347            android:launchMode="singleTop"
+347-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:332:13-43
+348            android:screenOrientation="portrait" />
+348-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:333:13-49
+349        <activity
+349-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:334:9-336:52
+350            android:name="com.denovo.app.top.uilayer.demo_mode.DummyWakeActivity"
+350-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:335:13-82
+351            android:screenOrientation="portrait" />
+351-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:336:13-49
+352        <activity
+352-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:337:9-340:52
+353            android:name="com.denovo.app.top.uilayer.UICashBackActivity"
+353-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:338:13-73
+354            android:launchMode="singleTop"
+354-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:339:13-43
+355            android:screenOrientation="portrait" />
+355-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:340:13-49
+356
+357        <provider
+357-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:342:9-350:20
+358            android:name="androidx.core.content.FileProvider"
+358-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:343:13-62
+359            android:authorities="com.denovo.app.invokeiposgosample.provider"
+359-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:344:13-60
+360            android:exported="false"
+360-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:345:13-37
+361            android:grantUriPermissions="true" >
+361-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:346:13-47
+362            <meta-data
+362-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:347:13-349:63
+363                android:name="android.support.FILE_PROVIDER_PATHS"
+363-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:348:17-67
+364                android:resource="@xml/file_provider_paths" />
+364-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:349:17-60
+365        </provider>
+366
+367        <receiver
+367-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:352:9-355:39
+368            android:name="com.denovo.app.top.uilayer.taskScheduler.ScheduledTaskReceiver"
+368-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:353:13-90
+369            android:enabled="true"
+369-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:354:13-35
+370            android:exported="true" />
+370-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:355:13-36
+371        <!--
+372            <receiver
+373            android:name="com.denovo.app.top.uilayer.taskScheduler.AsosTaskReceiver"
+374            android:enabled="true"
+375            android:exported="true" />
+376        -->
+377        <activity
+377-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:363:9-366:52
+378            android:name="com.denovo.app.top.uilayer.result.UIPartialApprovalScreen"
+378-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:364:13-85
+379            android:launchMode="singleTop"
+379-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:365:13-43
+380            android:screenOrientation="portrait" />
+380-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:366:13-49
+381        <activity
+381-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:367:9-369:52
+382            android:name="com.denovo.app.top.uilayer.pinpad.PinPadConnectScreen"
+382-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:368:13-81
+383            android:screenOrientation="portrait" />
+383-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:369:13-49
+384        <activity
+384-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:370:9-373:52
+385            android:name="com.denovo.app.top.uilayer.pinpad.UIPinPadStatusScreen"
+385-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:371:13-82
+386            android:launchMode="singleTop"
+386-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:372:13-43
+387            android:screenOrientation="portrait" />
+387-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:373:13-49
+388        <activity
+388-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:374:9-376:52
+389            android:name="com.denovo.app.top.uilayer.gift.UIPointsActivity"
+389-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:375:13-76
+390            android:screenOrientation="portrait" />
+390-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:376:13-49
+391        <activity
+391-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:377:9-379:52
+392            android:name="com.denovo.app.top.uilayer.gift.UIGiftAmountEntryActivity"
+392-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:378:13-85
+393            android:screenOrientation="portrait" />
+393-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:379:13-49
+394        <activity
+394-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:380:9-382:52
+395            android:name="com.denovo.app.top.uilayer.gift.UIGiftAuthenticationIdActivity"
+395-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:381:13-90
+396            android:screenOrientation="portrait" />
+396-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:382:13-49
+397        <activity
+397-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:383:9-385:52
+398            android:name="com.denovo.app.top.uilayer.settings.demo_videos.UIVideoListActivity"
+398-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:384:13-95
+399            android:screenOrientation="portrait" />
+399-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:385:13-49
+400        <activity
+400-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:386:9-388:52
+401            android:name="com.denovo.app.top.uilayer.settings.demo_videos.UIVideoPlayerActivity"
+401-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:387:13-97
+402            android:screenOrientation="portrait" />
+402-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:388:13-49
+403        <!--
+404            <activity
+405            android:name="com.denovo.app.top.uilayer.intent_catcher.UIIntentCatcherActivity"
+406            android:exported="true"
+407            android:screenOrientation="portrait" />
+408        -->
+409        <activity
+409-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:397:9-400:52
+410            android:name="com.denovo.app.top.uilayer.breakup.AdjustPriceActivity"
+410-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:398:13-82
+411            android:exported="true"
+411-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:399:13-36
+412            android:screenOrientation="portrait" />
+412-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:400:13-49
+413
+414        <service
+414-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:402:9-409:19
+415            android:name="com.denovo.app.top.uilayer.SigService"
+415-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:403:13-65
+416            android:exported="false"
+416-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:404:13-37
+417            android:process=":remote" >
+417-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:405:13-38
+418            <intent-filter>
+418-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:406:13-408:29
+419                <action android:name="com.denovo.app.topcom.denovo.app.top.uilayer.SigService" />
+419-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:407:17-98
+419-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:407:25-95
+420            </intent-filter>
+421        </service>
+422        <service
+422-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:410:9-417:19
+423            android:name="com.denovo.app.top.uilayer.SigSenSos"
+423-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:411:13-64
+424            android:exported="false"
+424-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:412:13-37
+425            android:process=":remote" >
+425-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:413:13-38
+426            <intent-filter>
+426-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:414:13-416:29
+427                <action android:name="com.denovo.app.topcom.denovo.app.top.uilayer.SigSenSos" />
+427-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:415:17-97
+427-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:415:25-94
+428            </intent-filter>
+429        </service> <!-- TODO THIS FOR TAP ON PHONE -->
+430        <activity
+430-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:419:9-422:52
+431            android:name="com.denovo.app.top.uilayer.tap_on_phone.nfc_finder.NFCReaderActivity"
+431-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:420:13-96
+432            android:launchMode="singleTop"
+432-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:421:13-43
+433            android:screenOrientation="portrait" />
+433-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:422:13-49
+434        <activity
+434-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:423:9-425:52
+435            android:name="com.denovo.app.top.uilayer.tap_on_phone.nfc_finder.NFCSpotFinderActivity"
+435-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:424:13-100
+436            android:screenOrientation="portrait" />
+436-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:425:13-49
+437        <activity
+437-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:426:9-428:52
+438            android:name="com.denovo.app.top.uilayer.sdk.BoardingActivity"
+438-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:427:13-75
+439            android:screenOrientation="portrait" />
+439-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:428:13-49
+440        <activity
+440-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:429:9-431:52
+441            android:name="com.denovo.app.top.uilayer.sdk.branding.VisaBrandingActivity"
+441-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:430:13-88
+442            android:screenOrientation="portrait" />
+442-->[com.denovo:topliteapp:6.0.0.153] C:\Users\Jeevan\.gradle\caches\transforms-3\1c1e036caf63b61850029bf93499d31d\transformed\jetified-topliteapp-6.0.0.153\AndroidManifest.xml:431:13-49
+443        <activity
+443-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\1b6e569ecba9289d1ffec5a5b449d0d3\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:20:9-22:45
+444            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+444-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\1b6e569ecba9289d1ffec5a5b449d0d3\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:20:19-85
+445            android:exported="false"
+445-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\1b6e569ecba9289d1ffec5a5b449d0d3\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:22:19-43
+446            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+446-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\1b6e569ecba9289d1ffec5a5b449d0d3\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:21:19-78
+447
+448        <meta-data
+448-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Jeevan\.gradle\caches\transforms-3\c19d0031372afd6e1ee15a0710ade122\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+449            android:name="com.google.android.gms.version"
+449-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Jeevan\.gradle\caches\transforms-3\c19d0031372afd6e1ee15a0710ade122\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+450            android:value="@integer/google_play_services_version" />
+450-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Jeevan\.gradle\caches\transforms-3\c19d0031372afd6e1ee15a0710ade122\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+451
+452        <provider
+452-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\d089cf3e0938a18f28eb6c214e05556f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+453            android:name="androidx.startup.InitializationProvider"
+453-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\d089cf3e0938a18f28eb6c214e05556f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+454            android:authorities="com.denovo.app.invokeiposgosample.androidx-startup"
+454-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\d089cf3e0938a18f28eb6c214e05556f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+455            android:exported="false" >
+455-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\d089cf3e0938a18f28eb6c214e05556f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+456            <meta-data
+456-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\d089cf3e0938a18f28eb6c214e05556f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+457                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+457-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\d089cf3e0938a18f28eb6c214e05556f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+458                android:value="androidx.startup" />
+458-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jeevan\.gradle\caches\transforms-3\d089cf3e0938a18f28eb6c214e05556f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+459            <meta-data
+459-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+460                android:name="androidx.work.WorkManagerInitializer"
+460-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+461                android:value="androidx.startup" />
+461-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+462            <meta-data
+462-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jeevan\.gradle\caches\transforms-3\92601b3c96a21621608f221804bdd3f1\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+463                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+463-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jeevan\.gradle\caches\transforms-3\92601b3c96a21621608f221804bdd3f1\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+464                android:value="androidx.startup" />
+464-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jeevan\.gradle\caches\transforms-3\92601b3c96a21621608f221804bdd3f1\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+465        </provider>
+466
+467        <service
+467-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+468            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+468-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+469            android:directBootAware="false"
+469-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+470            android:enabled="@bool/enable_system_alarm_service_default"
+470-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+471            android:exported="false" />
+471-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+472        <service
+472-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+473            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+473-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+474            android:directBootAware="false"
+474-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+475            android:enabled="@bool/enable_system_job_service_default"
+475-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+476            android:exported="true"
+476-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+477            android:permission="android.permission.BIND_JOB_SERVICE" />
+477-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+478        <service
+478-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+479            android:name="androidx.work.impl.foreground.SystemForegroundService"
+479-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+480            android:directBootAware="false"
+480-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+481            android:enabled="@bool/enable_system_foreground_service_default"
+481-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+482            android:exported="false" />
+482-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+483
+484        <receiver
+484-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+485            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+485-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+486            android:directBootAware="false"
+486-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+487            android:enabled="true"
+487-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+488            android:exported="false" />
+488-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+489        <receiver
+489-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+490            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+490-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+491            android:directBootAware="false"
+491-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+492            android:enabled="false"
+492-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+493            android:exported="false" >
+493-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+494            <intent-filter>
+494-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+495                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+495-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+495-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+496                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+496-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+496-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+497            </intent-filter>
+498        </receiver>
+499        <receiver
+499-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+500            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+500-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+501            android:directBootAware="false"
+501-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+502            android:enabled="false"
+502-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+503            android:exported="false" >
+503-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+504            <intent-filter>
+504-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+505                <action android:name="android.intent.action.BATTERY_OKAY" />
+505-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+505-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+506                <action android:name="android.intent.action.BATTERY_LOW" />
+506-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+506-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+507            </intent-filter>
+508        </receiver>
+509        <receiver
+509-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+510            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+510-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+511            android:directBootAware="false"
+511-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+512            android:enabled="false"
+512-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+513            android:exported="false" >
+513-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+514            <intent-filter>
+514-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+515                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+515-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+515-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+516                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+516-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+516-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+517            </intent-filter>
+518        </receiver>
+519        <receiver
+519-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+520            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+520-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+521            android:directBootAware="false"
+521-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+522            android:enabled="false"
+522-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+523            android:exported="false" >
+523-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+524            <intent-filter>
+524-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+525                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+525-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+525-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+526            </intent-filter>
+527        </receiver>
+528        <receiver
+528-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+529            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+529-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+530            android:directBootAware="false"
+530-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+531            android:enabled="false"
+531-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+532            android:exported="false" >
+532-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+533            <intent-filter>
+533-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+534                <action android:name="android.intent.action.BOOT_COMPLETED" />
+534-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:17-79
+534-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:25-76
+535                <action android:name="android.intent.action.TIME_SET" />
+535-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+535-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+536                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+536-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+536-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+537            </intent-filter>
+538        </receiver>
+539        <receiver
+539-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+540            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+540-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+541            android:directBootAware="false"
+541-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+542            android:enabled="@bool/enable_system_alarm_service_default"
+542-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+543            android:exported="false" >
+543-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+544            <intent-filter>
+544-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+545                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+545-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+545-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+546            </intent-filter>
+547        </receiver>
+548        <receiver
+548-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+549            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+549-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+550            android:directBootAware="false"
+550-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+551            android:enabled="true"
+551-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+552            android:exported="true"
+552-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+553            android:permission="android.permission.DUMP" >
+553-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+554            <intent-filter>
+554-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+555                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+555-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+555-->[androidx.work:work-runtime:2.7.1] C:\Users\Jeevan\.gradle\caches\transforms-3\1cde98d03f3e948449b0fe8817b65541\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+556            </intent-filter>
+557        </receiver>
+558
+559        <service
+559-->[androidx.room:room-runtime:2.4.3] C:\Users\Jeevan\.gradle\caches\transforms-3\ee6f5150401e5302a1944b8bf1ec77ad\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
+560            android:name="androidx.room.MultiInstanceInvalidationService"
+560-->[androidx.room:room-runtime:2.4.3] C:\Users\Jeevan\.gradle\caches\transforms-3\ee6f5150401e5302a1944b8bf1ec77ad\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
+561            android:directBootAware="true"
+561-->[androidx.room:room-runtime:2.4.3] C:\Users\Jeevan\.gradle\caches\transforms-3\ee6f5150401e5302a1944b8bf1ec77ad\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
+562            android:exported="false" />
+562-->[androidx.room:room-runtime:2.4.3] C:\Users\Jeevan\.gradle\caches\transforms-3\ee6f5150401e5302a1944b8bf1ec77ad\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
+563    </application>
+564
+565</manifest>
