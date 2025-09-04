@@ -1,8 +1,10 @@
 package com.denovo.app.invokeiposgosample;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.InputFilter;
@@ -17,6 +19,7 @@ import androidx.core.app.ActivityCompat;
 
 import com.denovo.app.invokeiposgosample.utility.AmountEntryTxtWatcher;
 import com.denovo.app.invokeiposgosample.utility.MainUtils;
+import com.denovo.app.invokeiposgosample.utility.ThemeApplication;
 import com.denovo.app.top.business.tap_on_phone.host_config.TopTxn;
 import com.denovo.app.top.business.tap_on_phone.host_config.TopTxnManager;
 import com.denovo.app.top.uilayer.sdk.ToPService;
@@ -34,7 +37,7 @@ import org.json.JSONObject;
 
 import java.util.UUID;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     private final String TAG = "Dplog";
     private final String SESSION_KEY = "SESSION_KEY";
@@ -126,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case TOPParams.RECENT_TXN:
                         show_recent_txn();
+                        break;
 
                     default:
                         break;
@@ -223,63 +227,70 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jsonObject = new JSONObject();
             String sessionKey = preference.getString(SESSION_KEY, "");
             if ((type.equalsIgnoreCase(TOPParams.SALE)  || type.equalsIgnoreCase(TOPParams.REFUND) || type.equalsIgnoreCase(TOPParams.PRE_AUTH)) &&
-            !amount.equals("0.00")) {
+                    !amount.equals("0.00")) {
 
-            if (type.equalsIgnoreCase(TOPParams.SALE)){
-                jsonObject.put("type", TOPParams.SALE);
-                /*jsonObject.put("lang", TOPParams.HEBREW);*/
-                jsonObject.put("amount", amount);
-                /*jsonObject.put(TOPParams.UN_MASKED_PAN_NEEDED, isFullCardNumberNeeded());*/
-                jsonObject.put(TOPParams.IS_RECEIPTS_NEEDED, isReceiptNeededInResponse());
-                jsonObject.put(TOPParams.SHOW_APPROVAL_SCREEN, showApprovalScreen());
-                jsonRequest =  getCustomObject(jsonObject);
-            }else if (type.equalsIgnoreCase(TOPParams.REFUND)){
-                jsonObject.put("type", TOPParams.REFUND);
-                jsonObject.put("amount", amount);
-                /*jsonObject.put(TOPParams.UN_MASKED_PAN_NEEDED, isFullCardNumberNeeded());*/
-                jsonObject.put(TOPParams.IS_RECEIPTS_NEEDED, isReceiptNeededInResponse());
-                jsonObject.put(TOPParams.SHOW_APPROVAL_SCREEN, showApprovalScreen());
-                jsonRequest =  getCustomObject(jsonObject);
-            }else if (type.equalsIgnoreCase(TOPParams.PRE_AUTH)){
-                jsonObject.put("type", TOPParams.PRE_AUTH);
-                /*jsonObject.put("lang", TOPParams.HEBREW);*/
-                jsonObject.put("amount", amount);
-                /*jsonObject.put(TOPParams.UN_MASKED_PAN_NEEDED, isFullCardNumberNeeded());*/
-                jsonObject.put(TOPParams.IS_RECEIPTS_NEEDED, isReceiptNeededInResponse());
-                jsonObject.put(TOPParams.SHOW_APPROVAL_SCREEN, showApprovalScreen());
-                jsonRequest =  getCustomObject(jsonObject);
-            }
+                if (type.equalsIgnoreCase(TOPParams.SALE)){
+                    jsonObject.put("type", TOPParams.SALE);
+                    /*jsonObject.put("lang", TOPParams.HEBREW);*/
+                    jsonObject.put("amount", amount);
+                    /*jsonObject.put(TOPParams.UN_MASKED_PAN_NEEDED, isFullCardNumberNeeded());*/
+                    jsonObject.put(TOPParams.IS_RECEIPTS_NEEDED, isReceiptNeededInResponse());
+                    jsonObject.put(TOPParams.SHOW_APPROVAL_SCREEN, showApprovalScreen());
+                    jsonRequest =  getCustomObject(jsonObject);
+                }else if (type.equalsIgnoreCase(TOPParams.REFUND)){
+                    jsonObject.put("type", TOPParams.REFUND);
+                    jsonObject.put("amount", amount);
+                    /*jsonObject.put(TOPParams.UN_MASKED_PAN_NEEDED, isFullCardNumberNeeded());*/
+                    jsonObject.put(TOPParams.IS_RECEIPTS_NEEDED, isReceiptNeededInResponse());
+                    jsonObject.put(TOPParams.SHOW_APPROVAL_SCREEN, showApprovalScreen());
+                    jsonRequest =  getCustomObject(jsonObject);
+                }else if (type.equalsIgnoreCase(TOPParams.PRE_AUTH)){
+                    jsonObject.put("type", TOPParams.PRE_AUTH);
+                    /*jsonObject.put("lang", TOPParams.HEBREW);*/
+                    jsonObject.put("amount", amount);
+                    /*jsonObject.put(TOPParams.UN_MASKED_PAN_NEEDED, isFullCardNumberNeeded());*/
+                    jsonObject.put(TOPParams.IS_RECEIPTS_NEEDED, isReceiptNeededInResponse());
+                    jsonObject.put(TOPParams.SHOW_APPROVAL_SCREEN, showApprovalScreen());
+                    jsonRequest =  getCustomObject(jsonObject);
+                }
 /*
                 ProgressDialog progressDialog = ProgressDialog.show(context, " Processing Transaction", "", true);
 */
 
-            toPService.performTransaction(jsonRequest, sessionKey, new ToPService.OnTransactionListener() {
-                /*@Override
-                public void onTransactionResponse(JSONObject jsonObject) {
+                toPService.performTransaction(jsonRequest, sessionKey, new ToPService.OnTransactionListener() {
+                    /*@Override
+                    public void onTransactionResponse(JSONObject jsonObject) {
 
-                    setTransactionResultTxt("" + jsonObject.toString());
-                    Log.d("mResponse",jsonObject.toString());
+                        setTransactionResultTxt("" + jsonObject.toString());
+                        Log.d("mResponse",jsonObject.toString());
 
-                }*/
-                @Override
-                public void onTransactionSuccess(JSONObject jsonObject) {
-                    Utils.logPrint('E',"onTransactionSuccess--"+jsonObject.toString());
-                    setTransactionResultTxt("" + jsonObject.toString());
-                }
+                    }*/
+                    @Override
+                    public void onTransactionSuccess(JSONObject jsonObject) {
+                        Utils.logPrint('E',"onTransactionSuccess--"+jsonObject.toString());
+                        setTransactionResultTxt("" + jsonObject.toString());
+                    }
 
-                @Override
-                public void onTransactionError(JSONObject jsonObject) {
-                    Utils.logPrint('E',"onTransactionError--"+jsonObject.toString());
-                    setTransactionResultTxt("" + jsonObject.toString());
-                }
-                @Override
-                public void onRegisterNeeded(JSONObject jsonObject) {
-                    Utils.logPrint('E',"onRegisterNeeded--"+jsonObject.toString());
-                    setTransactionResultTxt("" + jsonObject.toString());
-                    /*registerDevice(toPService);*/
+                    @Override
+                    public void onTransactionError(JSONObject jsonObject) {
+                        Utils.logPrint('E',"onTransactionError--"+jsonObject.toString());
+                        setTransactionResultTxt("" + jsonObject.toString());
+                    }
+                    @Override
+                    public void onRegisterNeeded(JSONObject jsonObject) {
+                        Utils.logPrint('E',"onRegisterNeeded--"+jsonObject.toString());
+                        setTransactionResultTxt("" + jsonObject.toString());
+                        /*registerDevice(toPService);*/
+                        try {
+                            if(jsonObject.getString(TOPParams.ERROR_CODE).equals(TOPParams.SSL_SECURE_CONNECTION_ISSUE_CODE)){
+                                restartApp(getApplicationContext());
+                            }
+                        } catch (JSONException e) {
+                            throw new RuntimeException(e);
+                        }
 
-                }
-            });
+                    }
+                });
 
             }
             else if (type.equalsIgnoreCase(TOPParams.VOID)){
@@ -513,6 +524,7 @@ public class MainActivity extends AppCompatActivity {
                         // now, user has denied permission (but not permanently!)
                         finish();
                     } else {
+                        Utils.logPrint('E', "cam ehere" + requestCode);
                         // now, user has denied permission permanently!
                         Utils.showPermissionSnackBar(MainActivity.this, getResources().getString(com.denovo.app.top.R.string.LOCATION_PERMISSION_CONTENT));
                     }
@@ -523,7 +535,22 @@ public class MainActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
+    public static void restartApp(Context context) {
+        Intent intent = context.getPackageManager()
+                .getLaunchIntentForPackage(context.getPackageName());
 
+        if (intent != null) {
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+            if (context instanceof Activity) {
+                ((Activity) context).finish();
+            }
+
+            // Kill the current process to ensure full restart
+            android.os.Process.killProcess(android.os.Process.myPid());
+            System.exit(0);
+        }
+    }
 
 
 }
