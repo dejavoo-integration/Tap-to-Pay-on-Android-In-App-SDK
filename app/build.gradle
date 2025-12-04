@@ -61,7 +61,7 @@ dependencies {
 
     //UAT
     implementation 'com.denovo:topliteapp:1.7.5.5'
-    implementation files('../libs/SoftPos-v1.3.66.7-Debug_Test.aar')
+    implementation files('../libs/SoftPos-v1.5.66-Debug_Test.aar')
 
     //prod
 //    implementation 'com.denovo:topliteapp-PROD:7.0.0.5'
