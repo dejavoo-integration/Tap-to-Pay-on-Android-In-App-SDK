@@ -57,11 +57,11 @@ dependencies {
    //implementation 'com.denovo:topliteapp:6.0.0.160'
 
 //    sendpayment link
-     implementation 'com.denovo:topliteapp:6.0.0.153'
+  //   implementation 'com.denovo:topliteapp:6.0.0.153'
 
     //UAT
-//    implementation 'com.denovo:topliteapp:1.7.5.3'
-//    implementation files('../libs/SoftPos-v1.3.66.7-Debug_Test.aar')
+    implementation 'com.denovo:topliteapp:1.7.5.5'
+    implementation files('../libs/SoftPos-v1.3.66.7-Debug_Test.aar')
 
     //prod
 //    implementation 'com.denovo:topliteapp-PROD:7.0.0.5'
