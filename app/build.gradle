@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.denovo.app.invokeiposgosample'
-    compileSdk 33
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.denovo.app.invokeiposgosample"
@@ -57,10 +57,10 @@ dependencies {
    //implementation 'com.denovo:topliteapp:6.0.0.160'
 
 //    sendpayment link
-  //   implementation 'com.denovo:topliteapp:6.0.0.153'
+//     implementation 'com.denovo:topliteapp:6.0.0.811'
 
     //UAT
-    implementation 'com.denovo:topliteapp:1.7.5.5'
+    implementation 'com.denovo:topliteapp:1.7.6.0'
     implementation files('../libs/SoftPos-v1.3.66.7-Debug_Test.aar')
 
     //prod
