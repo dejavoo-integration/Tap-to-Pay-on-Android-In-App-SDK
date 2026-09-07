@@ -1,0 +1,42 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+// Dejavoo/Denovo S3 credentials (same convention as ISL-SDK):
+// put denovoAwsAccessKey / denovoAwsSecretKey (and the PROD pair) in
+// ~/.gradle/gradle.properties, or export DENOVO_AWS_ACCESS_KEY / DENOVO_AWS_SECRET_KEY.
+def awsAccessKey     = providers.gradleProperty('denovoAwsAccessKey').getOrElse(System.getenv('DENOVO_AWS_ACCESS_KEY') ?: '')
+def awsSecretKey     = providers.gradleProperty('denovoAwsSecretKey').getOrElse(System.getenv('DENOVO_AWS_SECRET_KEY') ?: '')
+def awsProdAccessKey = providers.gradleProperty('denovoAwsProdAccessKey').getOrElse(System.getenv('DENOVO_AWS_PROD_ACCESS_KEY') ?: '')
+def awsProdSecretKey = providers.gradleProperty('denovoAwsProdSecretKey').getOrElse(System.getenv('DENOVO_AWS_PROD_SECRET_KEY') ?: '')
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenCentral()
+        maven {
+            url "s3://denovo-android.s3.amazonaws.com/testing"
+            credentials(AwsCredentials) {
+                accessKey awsAccessKey
+                secretKey awsSecretKey
+            }
+        }
+        maven {
+            url "s3://denovo-android.s3.amazonaws.com/prod"
+            credentials(AwsCredentials) {
+                accessKey awsProdAccessKey
+                secretKey awsProdSecretKey
+            }
+        }
+
+    }
+}
+
+rootProject.name = "USSampleApp"
+include ':app'
